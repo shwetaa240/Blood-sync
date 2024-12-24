@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BloodSync</title>
+    <link rel="stylesheet" type="text/css" href="blood.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Fredoka:wght@300..700&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Fredoka:wght@300..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="navbar">
+      <label id="logo"
+        ><span id="diff">B</span
+        ><span style="font-weight: 900; color: rgba(202, 18, 18, 0.961)"
+          >lood<span id="diff">S</span>ync</span
+        ></label
+      >
+
+      <!-- <div class="searchdiv" onclick="toggles()">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" placeholder="Search here" />
+      </div> -->
+
+      <div id="bar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Donate</a></li>
+          <li><a href="#">Request</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <!-- <li><select>
+            <option>More</option>
+            <option>Feedback</option>
+            <option>Programs</option>
+          </select></li> -->
+        </ul>
+      </div>
+    </div>
+    <div id="banner">
+      <div class="bgcolor">
+        <div class="header">
+          <h1>One Donation</h1>
+          <h1>Endless Possibilties</h1>
+          <p>Donate blood and make a difference today!</p>
+          <p><a href="login_page.html">Login</a> <a href="login_page.html">Register</a></p>
+        </div>
+        <!-- <img src="bg119.png" /> -->
+        <div class="circle">
+          <img id="one" src="heroo.png" />
+          <img id="two" src="heroo3.png" />
+          <!-- <img id="three" src="bg112.png" />  -->
+        </div>
+      </div>
+    </div>
+    <div class="feature">
+      <div id="r1">
+        <img id="icn" src="icons.png" />
+      </div>
+      <div id="r2">
+        <p>Can I give Blood?</p>
+        <p>Where to give Blood?</p>
+        <p>Blood supply levels</p>
+        <p>Iron deficiency</p>
+        <p>Prepare and aftercare</p>
+        <p>How to donate?</p>
+      </div>
+    </div>
+
+    <div class="type">
+      <h1>Blood Types Needed</h1>
+      <p>
+        The demand for blood donations fluctuates due to various factors such as
+        weather changes, holiday seasons, and unforeseen emergencies. Each day,
+        patients in critical need rely on the generosity of donors like you.
+        With less than 10% of the population actively donating, your
+        contribution is vital to ensuring a steady supply for those in need.
+        Regular donors play an indispensable role in maintaining our blood
+        inventories, particularly during times of crisis. By scheduling an
+        appointment today, you can make a profound impact and help save lives.
+        Join us in this lifesaving mission—your donation could be the difference
+        between life and death for someone in need.
+      </p>
+      <img src="types.png" />
+      <button><a href="#" id="appoint">Schedule Appointment</a></button>
+    </div>
+
+    <div id="entry">
+      <h1>Upcoming Camps</h1>
+      <table class="table table-striped-columns table1">
+        <tr>
+          <th>S.no</th>
+          <th>Center</th>
+          <th>Time</th>
+          <th>Date</th>
+          <th>Official</th>
+          <th>Contact</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>District Hospital</td>
+          <td>9:00 am - 2:00 pm</td>
+          <td>30/10/2024</td>
+          <td>R.K Mehta</td>
+          <td>9023489211</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ambedkar Hospital</td>
+          <td>10:00 am - 2:30 pm</td>
+          <td>31/10/2024</td>
+          <td>Jay Sharma</td>
+          <td>9984829131</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Alice Ground</td>
+          <td>8.00 am - 4:00 pm</td>
+          <td>03/11/2024</td>
+          <td>Esha Gupta</td>
+          <td>7782499472</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Springdales College</td>
+          <td>11:00 am - 5:00 pm</td>
+          <td>07/11/2024</td>
+          <td>Dr.Shalini Tiwari</td>
+          <td>9863789172</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>DRDO Bhawan</td>
+          <td>10:00 am - 3:00 pm</td>
+          <td>07/11/2024</td>
+          <td>Ramesh Mishra</td>
+          <td>8874829171</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="donate">
+      <h1>Making Your First Donation</h1>
+      <p id="para">
+        Taking the step to donate blood for the first time is an admirable
+        decision that can save lives. Whether you’re motivated by a personal
+        experience or simply want to help those in need, understanding the
+        donation process can make your first experience smooth and enjoyable.
+        Here’s a straightforward guide to walk you through each step of making
+        your first blood donation-
+      </p>
+      <div class="roww">
+        <div id="card">
+          <img src="que.png" id="cdimg" />
+
+          <div class="cdata">
+            <h3>Step 1:</h3>
+            <p>
+              Complete a health check questionnaire and drink 500ml of water.
+            </p>
+          </div>
+        </div>
+
+        <div id="card">
+          <img src="check.png" id="cdimg" />
+          <div class="cdata">
+            <h3>Step 2:</h3>
+            <p>
+              Have a private health screening with a friendly member of the
+              team.
+            </p>
+          </div>
+        </div>
+
+        <div id="card">
+          <img src="donor.png" id="cdimg" />
+          <div class="cdata">
+            <h3>Step 3:</h3>
+            <p>Take a seat and then donate blood happily for 5-10 minutes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="roww">
+        <div id="card">
+          <img src="juice.png" id="cdimg" />
+          <div class="cdata">
+            <h3>Step 4:</h3>
+            <p>Enjoy a free drink and snack while you rest for 15 minutes.</p>
+          </div>
+        </div>
+        <div id="card">
+          <img src="hero2.png" id="cdimg" />
+          <div class="cdata">
+            <h3>Step 5:</h3>
+            <p>
+              You're all done. Your donation will help save up to three lives.
+            </p>
+          </div>
+        </div>
+        <div id="card" class="card2">
+          <!-- <img src="hero2.png" id="cdimg" />
+          <div class="cdata2"> -->
+            <h3>Check Eligibility >></h3>
+            <p>
+              Click above to know more.
+            </p>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+
+
+    <h1 id="camp">Images from Camp</h1>
+    <div class="content">
+      
+      <div class="images">
+        <img src="i1.png">
+        <img src="i3.png">
+        <img src="i5.png">
+        <img src="i4.png">
+        <img src="i2.png">
+      </div>
+      <div class="btm-slides">
+         <span onclick="btm_slide(1)"></span>
+         <span onclick="btm_slide(2)"></span>
+         <span onclick="btm_slide(3)"></span>
+         <span onclick="btm_slide(4)"></span>
+         <span onclick="btm_slide(5)"></span>
+      </div>
+      <!-- <div class="sliders left" onclick="side_slide(-1)">
+         <span class="fas fa-angle-left"></span>
+      </div>
+      <div class="sliders right" onclick="side_slide(1)">
+         <span class="fas fa-angle-right"></span>
+      </div> -->
+   </div>
+
+   <footer>
+    <div class="footer-ele">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+
+      <div class="tag">
+        <span id="brand-name" class="foot-ele">Blood Sync</span>
+        <span class="foot-ele" id="tag-text"
+          >❤Your blood donation can give someone a second chance at
+          life.❤</span
+        >
+        <div class="follow-us foot-ele">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="quick-links foot-ele">
+        <span class="heading">Menu</span>
+        <span><a href="#">Home</a></span>
+        <span><a href="#">About Us</a></span>
+        <span><a href="#">Donate Blood</a></span>
+        <span><a href="#">Find a donor</a></span>
+        <span><a href="#">Contact Us</a></span>
+      </div>
+      <hr class="vhr" />  <!-- hr not working due to bootstrap-->
+      <div class="contact foot-ele">
+        <h1>Contact Us</h1>
+        <span><a href="tel:1234556">📞 +91 1122112211</a></span>
+        <span
+          ><a href="mailto:abcd@example.com"
+            >✉ bloodsync@donation.org</a
+          ></span
+        >
+      </div>
+      <hr />
+      <div class="join-us">
+        <p>Join us and let's make a better world, today</p>
+        <button id="donate-bl">Donate Blood</button>
+        <button id="help-ask">More ways to help</button>
+      </div>
+    </div>
+    <div class="copyright foot-ele">
+      Copyright &copy;2024 Blood Sync. All rights reserved.
+    </div>
+  </footer>
+
+   <script>
+      var indexValue = 1;
+      showImg(indexValue);
+      function btm_slide(e){showImg(indexValue = e);}
+      function side_slide(e){showImg(indexValue += e);}
+      function showImg(e){
+        var i;
+        const img = document.querySelectorAll('.images img');
+        const slider = document.querySelectorAll('.btm-slides span');
+        if(e > img.length){indexValue = 1}
+        if(e < 1){indexValue = img.length}
+        for(i = 0; i < img.length; i++){
+          img[i].style.display = "none";
+        }
+        for(i = 0; i < slider.length; i++){
+          slider[i].style.background = "rgba(255,255,255,0.1)";
+        }
+        img[indexValue-1].style.display = "block";
+        slider[indexValue-1].style.background = "white";
+      }
+   </script>
+
+
+    <!-- <div class="content">
+      <div class="images">
+         <img src="i1.png">
+         <img src="i3.png">
+         <img src="i5.png">
+         <img src="i4.png">
+         <img src="i2.png">
+      </div>
+   </div> -->
+
+   <!-- <script>
+    var indexValue = 0;
+    function slideShow(){
+      setTimeout(slideShow, 2500);
+      var x;
+      const img = document.querySelectorAll("img");
+      for(x = 0; x < img.length; x++){
+        img[x].style.display = "none";
+      }
+      indexValue++;
+      if(indexValue > img.length){indexValue = 1}
+      img[indexValue -1].style.display = "block";
+    }
+    slideShow();
+ </script> -->
+
+  <!-- <div class="centered">
+   <div class="images">
+    <div class="sd"><img src="i1.png"></div>
+    <div class="sd"><img src="i2.png"></div>
+    <div class="sd"><img src="i4.png"></div>
+    <div class="sd"><img src="i5.png"></div>
+    <div class="sd"><img src="i3.png"></div>
+   </div>
+   <div class="btns">
+    <a href="#" class="btnn1"></a>
+    <a href="#" class="btnn1"></a>
+    <a href="#" class="btnn1"></a>
+    <a href="#" class="btnn1"></a>
+    <a href="#" class="btnn1"></a>
+   </div>
+  </div> -->
+
+
+<!-- lmlbfs;fllmdf;module.exports lmd;flmdf fmd;fmb fa-lambda -->
+  </body>
+</html>

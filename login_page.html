@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Register</title>
+
+    <link rel="stylesheet" href="log.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Fredoka:wght@300..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box login">
+        <form action="">
+          <h1>Login</h1>
+          <div class="inpt_box">
+            <input type="text" placeholder="Username" required />
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="inpt_box">
+            <input type="password" placeholder="Password" required />
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <div class="forgot-link">
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <p>or login with social platforms</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-google icon"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in icon"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f icon"></i></a>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="form-box register">
+        <form action="">
+          <h1>Register</h1>
+          <div class="inpt_box">
+            <input type="text" placeholder="Username" required />
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="inpt_box">
+            <input type="email" placeholder="Email" required />
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="inpt_box">
+            <input type="password" placeholder="Password" required />
+            <i class="fa-solid fa-key"></i>
+          </div>
+          
+          <button type="submit" class="btn">Register</button>
+          <p>or register with social platforms</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-google icon"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in icon"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f icon"></i></a>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="toggle-box">
+        <div class="panel tleft">
+          <h1>Welcome!</h1>
+          <p>Don't have an account?</p>
+          <button class="btn reg">Register</button>
+        </div>
+        <div class="panel tright">
+          <h1>Welcome</h1><h1> Back!</h1>
+          <p>Existing user?</p>
+          <button class="btn lgn">Login</button>
+        </div>
+      </div>
+
+    </div>
+
+  <script>
+    const container=document.querySelector('.container');
+    const rbtn=document.querySelector('.reg');
+    const lbtn=document.querySelector('.lgn');
+    const ff=document.querySelector('.form-box');
+    const right=document.querySelector('.tright');
+    const rfrm=document.querySelector('.register');
+    rbtn.addEventListener('click',()=>{
+      container.classList.add('active');
+      // ff.innerHTML="z-index=1";
+      ff.style.zIndex = "0";
+      rbtn.style.opacity="0";
+      right.style.zIndex="5";
+      rfrm.style.zIndex="5";
+    });
+    lbtn.addEventListener('click',()=>{
+      container.classList.remove('active');
+      ff.style.zIndex = "3";
+      rbtn.style.opacity="1";
+      right.style.zIndex="-4";
+      rfrm.style.zIndex="1";
+    });
+  </script>
+
+    <!-- <style>*
+    {
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-image:linear-gradient(30deg, rgba(211, 19, 19, 0.946),rgba(255, 0, 68, 0.398)) ;
+    }</style> -->
+  </body>
+</html>
