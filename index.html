@@ -82,15 +82,15 @@
         </div>
         <!-- <img src="bg119.png" /> -->
         <div class="circle">
-          <img id="one" src="heroo.png" />
-          <img id="two" src="heroo3.png" />
+          <img id="one" src="https://i.ibb.co/2MZtY5M/heroo.png" />
+          <img id="two" src="https://i.ibb.co/SxH229m/heroo3.png" />
           <!-- <img id="three" src="bg112.png" />  -->
         </div>
       </div>
     </div>
     <div class="feature">
       <div id="r1">
-        <img id="icn" src="icons.png" />
+        <img id="icn" src="https://i.ibb.co/L8gsFPf/icons.png" />
       </div>
       <div id="r2">
         <p>Can I give Blood?</p>
@@ -116,7 +116,7 @@
         Join us in this lifesaving mission—your donation could be the difference
         between life and death for someone in need.
       </p>
-      <img src="types.png" />
+      <img src="https://i.ibb.co/DkbbPS6/types.png" />
       <button><a href="#" id="appoint">Schedule Appointment</a></button>
     </div>
 
@@ -186,7 +186,7 @@
       </p>
       <div class="roww">
         <div id="card">
-          <img src="que.png" id="cdimg" />
+          <img src="https://i.ibb.co/GHvsWDw/que.png" id="cdimg" />
 
           <div class="cdata">
             <h3>Step 1:</h3>
@@ -197,7 +197,7 @@
         </div>
 
         <div id="card">
-          <img src="check.png" id="cdimg" />
+          <img src="https://i.ibb.co/jfhyTMp/check.png" id="cdimg" />
           <div class="cdata">
             <h3>Step 2:</h3>
             <p>
@@ -208,7 +208,7 @@
         </div>
 
         <div id="card">
-          <img src="donor.png" id="cdimg" />
+          <img src="https://i.ibb.co/gPXnXkd/donor.png" id="cdimg" />
           <div class="cdata">
             <h3>Step 3:</h3>
             <p>Take a seat and then donate blood happily for 5-10 minutes.</p>
@@ -218,14 +218,14 @@
 
       <div class="roww">
         <div id="card">
-          <img src="juice.png" id="cdimg" />
+          <img src="https://i.ibb.co/59LYCZg/juice.png" id="cdimg" />
           <div class="cdata">
             <h3>Step 4:</h3>
             <p>Enjoy a free drink and snack while you rest for 15 minutes.</p>
           </div>
         </div>
         <div id="card">
-          <img src="hero2.png" id="cdimg" />
+          <img src="https://i.ibb.co/2hG47dr/hero2.png" id="cdimg" />
           <div class="cdata">
             <h3>Step 5:</h3>
             <p>
@@ -250,11 +250,11 @@
     <div class="content">
       
       <div class="images">
-        <img src="i1.png">
-        <img src="i3.png">
-        <img src="i5.png">
-        <img src="i4.png">
-        <img src="i2.png">
+        <img src="https://i.ibb.co/f0jqfbn/i1.png">
+        <img src="https://i.ibb.co/S3Mf33d/i3.png">
+        <img src="https://i.ibb.co/WG2crsy/i5.png">
+        <img src="https://i.ibb.co/R75MJwy/i4.png">
+        <img src="https://i.ibb.co/5MPT69c/i2.png">
       </div>
       <div class="btm-slides">
          <span onclick="btm_slide(1)"></span>
@@ -289,19 +289,26 @@
         <div class="follow-us foot-ele">
           <ul>
             <li>
-              <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+              <a  onclick="showPopup()><i class="fa-brands fa-square-facebook"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+              <a  onclick="showPopup()><i class="fa-brands fa-square-instagram"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a  onclick="showPopup()><i class="fa-brands fa-square-x-twitter"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a  onclick="showPopup()><i class="fa-brands fa-linkedin"></i></a>
             </li>
           </ul>
         </div>
+        <!-- pop up overlay -->
+          <div class="overlay" id="overlay" onclick="closePopup()"></div>
+          <div class="popup" id="popup">
+            <h3>Coming Soon!</h3>
+            <p>We are working on setting up our social media accounts.</p>
+            <button onclick="closePopup()">Close</button>
+          </div>
       </div>
       <hr />
       <div class="quick-links foot-ele">
@@ -353,6 +360,18 @@
         }
         img[indexValue-1].style.display = "block";
         slider[indexValue-1].style.background = "white";
+      }
+
+     // Show the popup
+      function showPopup() {
+        document.getElementById("popup").style.display = "block";
+        document.getElementById("overlay").style.display = "block";
+      }
+
+      // Close the popup
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("overlay").style.display = "none";
       }
    </script>
 
